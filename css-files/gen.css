@@ -1,0 +1,14 @@
+body{
+  background-color: rgb(105, 43, 83);
+  background: linear-gradient(
+    to right,
+    pink,
+    peachpuff,
+    lavender
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  height: 100vh;
+}

@@ -1,0 +1,34 @@
+.wlcm{
+  height: 300px;
+  width: 400px;
+  background-color: rgb(250, 238, 238);
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-btn{
+  color: rgb(70, 20, 59);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: inline-block;
+  background-color: rgb(235, 176, 215);
+  margin:0;
+  padding:10px;
+  border-radius: 10px;
+  width:100px;
+  border-color: rgb(243, 122, 176);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.menu-btn:hover{
+  transform: scale(1.05);
+}
+
+.wlcm p{
+  color: rgb(70, 20, 59);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+}
