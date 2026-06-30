@@ -27,9 +27,6 @@ function showMenu(){
       ">
         notes
       </button>
-      <button class="menu-btn">
-        calculator
-      </button>
     </div>
   `;
 }
@@ -55,7 +52,7 @@ function showTodo(){
        </div>
 
         <div class="btn-wrap">
-          <button class="plus">+</button>
+          <button class="plus" onClick="clrTasks()">+</button>
           <span class="txt">click to add a new todo page</span>
         </div>
     </div>
@@ -88,11 +85,24 @@ function displayTask(){
   }
 }
 
+function clrTasks(){
+  taskArr=[];
+  localStorage.removeItem('tasks');
+  displayTask();
+
+}
+
 function taskKey(event){
   let btn=event.key;
   if(btn==='Enter'){
     addTask();
   }
+}
+
+function clrNotes(){
+  let text=document.querySelector('.write-inp');
+  text.value='';
+  saveText();
 }
 
 function showNotes(){
@@ -111,7 +121,7 @@ function showNotes(){
         </div>
 
           <div class="btn-wrap">
-            <button class="plus">+</button>
+            <button class="plus" onclick="clrNotes();">+</button>
             <span class="txt">click to add a new notes </span>
           </div>
       </div>
